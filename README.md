@@ -34,7 +34,7 @@ assets/img/
 | Datas, horário e local | `index.html` — hero, seção Formato e rodapé |
 | Alvo da contagem regressiva | `index.html` — `data-target="2026-10-02T08:00:00-03:00"` (America/Bahia) |
 | Preços | hero, seção Investimento, CTA final e barra fixa do mobile |
-| Link de checkout | 5 CTAs + link do rodapé, todos para `checkout.nubank.com.br/d1EDBZhAhDyw1lv` |
+| Link de checkout | 5 CTAs + link do rodapé, todos para `pag.ae/826pQVu7J` |
 
 ## Animação
 
