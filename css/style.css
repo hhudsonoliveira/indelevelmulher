@@ -345,28 +345,27 @@ strong { font-weight: 600; color: #fff; }
   vertical-align: 2px;
 }
 
-/* Foto como camada de arte: no mobile é uma atmosfera atrás do texto,
-   no desktop sangra pela lateral direita e some no degradê vinho. */
+/* No mobile a foto é uma faixa sangrada logo abaixo do texto — em 390px de
+   largura a imagem é reduzida, então fica nítida. No desktop ela vira camada
+   de arte e sangra pela lateral direita (ver breakpoint de 1024px). */
 .hero__photo {
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 58%;
-  z-index: -1;
-  opacity: 0.22;
-  -webkit-mask-image: linear-gradient(180deg, #000 22%, transparent 94%);
-  mask-image: linear-gradient(180deg, #000 22%, transparent 94%);
+  position: relative;
+  height: 268px;
+  margin-top: 34px;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
 }
 .hero__photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 62% 14%;
+  object-position: 48% 18%;
 }
 .hero__photo::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(150deg, rgba(90, 11, 20, 0.5), rgba(21, 11, 13, 0.3));
+  background: linear-gradient(160deg, rgba(90, 11, 20, 0.34), rgba(21, 11, 13, 0.24));
 }
 
 .hero__facts {
@@ -743,7 +742,8 @@ strong { font-weight: 600; color: #fff; }
 .footer {
   background: #100708;
   border-top: 1px solid var(--hairline);
-  padding-block: 48px 92px;
+  /* folga para o botao flutuante do WhatsApp nao cobrir a ultima linha */
+  padding-block: 48px 156px;
   text-align: center;
 }
 .footer__brand { line-height: 1; margin-bottom: 12px; }
@@ -899,6 +899,9 @@ strong { font-weight: 600; color: #fff; }
 @media (min-width: 768px) {
   :root { --section-y: 96px; }
 
+  .footer { padding-bottom: 110px; }
+  .hero__photo { height: 300px; }
+
   .hero { padding-block: 60px 56px; }
   .hero__facts { grid-template-columns: repeat(4, 1fr); }
   .hero__facts li { padding: 18px 16px; }
@@ -936,10 +939,12 @@ strong { font-weight: 600; color: #fff; }
 
   /* a foto sangra pela direita e se dissolve no degradê antes de tocar o texto */
   .hero__photo {
+    position: absolute;
     inset: 0 0 0 auto;
     width: 56%;
     height: 100%;
-    opacity: 1;
+    margin-top: 0;
+    z-index: -1;
     -webkit-mask-image: linear-gradient(90deg, transparent 2%, rgba(0, 0, 0, 0.55) 28%, #000 62%);
     mask-image: linear-gradient(90deg, transparent 2%, rgba(0, 0, 0, 0.55) 28%, #000 62%);
   }
