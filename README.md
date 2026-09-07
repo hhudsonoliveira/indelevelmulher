@@ -16,7 +16,7 @@ assets/img/
 ## Antes de publicar
 
 1. **URLs absolutas do Open Graph** — no `<head>` do `index.html`, trocar
-   `https://hhudsonoliveira.github.io/indelevelmulher/` em `og:url`, `og:image`,
+   `https://indelevelmulher.com.br/` em `og:url`, `og:image`,
    `twitter:image` e `canonical` pelo domínio final. O WhatsApp só exibe a prévia
    com URL absoluta.
 2. **Imagens** — substituir os arquivos em `assets/img/` mantendo os mesmos nomes.
