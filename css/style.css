@@ -779,7 +779,15 @@ strong { font-weight: 600; color: #fff; }
   gap: 26px;
   margin-top: 16px;
 }
-.footer__logos img { width: 150px; height: auto; opacity: 0.86; }
+/* A marca do BRAS tem "SCHOOL" e o contorno do escudo em preto, então ela vai
+   sobre uma plaquinha clara — sem isso metade do logotipo some no fundo vinho. */
+.footer__plaque {
+  display: inline-flex;
+  padding: 16px 22px;
+  border-radius: 12px;
+  background: var(--areia);
+}
+.footer__plaque img { width: 190px; height: auto; }
 
 .footer__nav {
   display: flex;
@@ -922,7 +930,7 @@ strong { font-weight: 600; color: #fff; }
   .countdown { gap: 10px; }
   .cd-unit { min-width: 92px; padding: 18px 12px 14px; }
 
-  .footer__logos img { width: 176px; }
+  .footer__plaque img { width: 220px; }
 
   /* o CTA fixo é uma solução de mobile */
   .sticky-cta { display: none; }
