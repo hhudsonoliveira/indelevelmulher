@@ -8,24 +8,23 @@ css/style.css
 js/script.js
 assets/img/
   hero-mulher-executiva.jpeg      (recorte do flyer — TROCAR pela foto oficial em alta)
-  og-indelevel-mulher.jpeg        (flyer completo — imagem do compartilhamento no WhatsApp)
+  og-indelevel-mulher.jpeg        (banner 1200x630 — prévia do WhatsApp)
   flyer-indelevel-mulher.jpeg     (flyer original, para referência)
-  logo-bras-business-school.svg   (placeholder tipográfico que EU desenhei — TROCAR pelo logo oficial)
+  logo-bras-business-school.png   (marca oficial do BRAS, recortada e reduzida)
 ```
 
 ## Antes de publicar
 
-1. **URLs absolutas do Open Graph** — no `<head>` do `index.html`, trocar
-   `https://indelevelmulher.com.br/` em `og:url`, `og:image`,
-   `twitter:image` e `canonical` pelo domínio final. O WhatsApp só exibe a prévia
-   com URL absoluta.
+1. **URLs absolutas do Open Graph** — `og:url`, `og:image`, `twitter:image` e
+   `canonical` apontam para `https://indelevelmulher.com.br/`. Se o domínio mudar,
+   trocar as quatro: o WhatsApp só exibe a prévia com URL absoluta.
 2. **Imagens** — substituir os arquivos em `assets/img/` mantendo os mesmos nomes.
    A foto do hero sangra pela lateral direita no desktop e vira uma camada de
    atmosfera atrás do texto no mobile — funciona melhor com uma imagem larga
    (aprox. 1600×950) com a pessoa à direita. A imagem de OG funciona melhor em
    1200×630 ou no formato do flyer.
-3. **Logo do rodapé** — o SVG do BRAS é um placeholder tipográfico, não a marca
-   oficial. Pedir o arquivo original ao Moisés e substituir mantendo o nome.
+3. **Hospedagem** — Hostinger, upload manual. Subir apenas `index.html`,
+   `css/`, `js/` e os três arquivos usados em `assets/img/`.
 
 ## Dados do evento (fonte única)
 

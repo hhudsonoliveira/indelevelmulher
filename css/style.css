@@ -802,6 +802,28 @@ strong { font-weight: 600; color: #fff; }
 
 .footer__copy { margin-top: 28px; font-size: 12px; color: rgba(198, 166, 162, 0.66); }
 
+/* Assinatura de quem desenvolveu — discreta, abaixo do copyright */
+.footer__credit {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(198, 166, 162, 0.52);
+}
+.footer__credit a {
+  color: rgba(228, 201, 138, 0.82);
+  border-bottom: 1px solid rgba(201, 162, 76, 0.26);
+  padding-bottom: 1px;
+  transition: color 200ms var(--ease-out), border-color 200ms var(--ease-out);
+}
+.footer__credit-sep { margin-inline: 6px; opacity: 0.5; }
+
+@media (hover: hover) and (pointer: fine) {
+  .footer__credit a:hover {
+    color: var(--ouro-claro);
+    border-color: rgba(201, 162, 76, 0.6);
+  }
+}
+
 /* -----------------------------------------------------------------
    14. FLUTUANTES — WhatsApp e CTA fixo
    ----------------------------------------------------------------- */
