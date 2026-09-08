@@ -1,6 +1,6 @@
 /* =================================================================
    INDELÉVEL MULHER — comportamento da página
-   1) Contagem regressiva até 02/10/2026 08h (America/Bahia = UTC-3)
+   1) Contagem regressiva até 2 de outubro de 2026, 8h (America/Bahia = UTC-3)
    2) CTA fixo no mobile, revelado depois do hero
    ================================================================= */
 (function () {
@@ -126,7 +126,7 @@
     if (srOut && minutes !== lastMinuteAnnounced) {
       lastMinuteAnnounced = minutes;
       srOut.textContent = 'Faltam ' + days + ' dias, ' + hours + ' horas e ' +
-        minutes + ' minutos para o início do evento, em 02 de outubro de 2026 às 08h.';
+        minutes + ' minutos para o início do evento, em 2 de outubro de 2026 às 8h.';
     }
   }
 
